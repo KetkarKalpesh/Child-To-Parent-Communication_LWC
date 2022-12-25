@@ -3,6 +3,8 @@
         <div class="slds-var-m-around_medium">
             <lightning-button variant="brand" label="Show Data" onclick={handleClick}>
             </lightning-button>
+            <br>
+            <h1>{msg}</h1>
                 <template if:true={showData}>
                     <c-child-to-parent-custom-event-child 
                     onclose={closeHandler}></c-child-to-parent-custom-event-child>
